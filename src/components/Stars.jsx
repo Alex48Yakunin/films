@@ -15,18 +15,18 @@ export default function  Stars (props) {
 
     return arrStars;
   }
-
+  getListStars(count);
+  
   return (
-    <>
-    
+
       <ul className="card-body-stars u-clearfix">
-          {getListStars(count)}
+          
           {arrStars.map((item, index) => (
               <Star key={index}/>
         ))}
 
       </ul>
-    </>
+
   )
 }
 
